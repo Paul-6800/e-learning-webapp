@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>     
+        <meta charset="UTF-8">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <title>Learner Dashboard - E-Learning</title>     
+        <link rel="stylesheet" href="styles.css"> 
+    </head> 
+    <body>     
+        <header>         
+            <h1>Learner Dashboard</h1>         
+            <nav>             
+                <a href="dashboard.html">Back to Dashboard</a>         
+            </nav>     
+        </header>     
+        <div class="container">         
+            <h2>Welcome, 
+                <span id="learner-name">Learner</span>!</h2>         
+                <div class="notification">             
+                    <h3>Notifications</h3>             
+                    <p>Instructor A: Assignment due for COMP 222 on May 25, 2025.</p>         
+                </div>         
+                <h3>Your Courses</h3>         
+                <div class="course-list">             
+                    <p><a href="course-detail.html?course=comp222" class="btn">COMP 222: Intro to AI</a> (Instructor A)</p>             
+                    <p><a href="course-detail.html?course=comp223" class="btn">COMP 223: Internet Programming</a> (Instructor B)</p>             
+                    <p><a href="course-detail.html?course=chem221" class="btn">CHEM 221: Physical Chemistry</a> (Instructor C)</p>             
+                    <p><a href="course-detail.html?course=chem222" class="btn">CHEM 222: Chemistry of Aromatic Compounds</a> (Instructor D)</p>         
+                </div>         
+                <h3>Payment</h3>         
+                <form id="payment-form">             
+                    <label for="mpesa-code">Enter M-Pesa Code:</label>             
+                    <input type="text" id="mpesa-code" required>             
+                    <button type="submit">Submit Payment</button>         
+                </form>     
+            </div>     
+            <footer>         
+                <p>&copy; 2025 E-Learning Platform</p>     
+            </footer>     
+            <script src="script.js"></script> 
+        </body> 
+</html> 
